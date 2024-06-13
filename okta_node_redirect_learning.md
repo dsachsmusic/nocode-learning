@@ -11,7 +11,7 @@ Using an already created sample app....
 
 Follow instructions here https://github.com/okta-samples/okta-express-sample/tree/main
 
-- Install Okta CLI https://github.com/okta/okta-cli#installation
+* Install Okta CLI https://github.com/okta/okta-cli#installation
  - run curl https://raw.githubusercontent.com/okta/okta-cli/master/cli/src/main/scripts/install.sh | bash
   - throws an error related to funzip
    - so, run sudo apt install unzip
