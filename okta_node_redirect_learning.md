@@ -1,11 +1,11 @@
-# Heading 1 # Learning how to integrate Okta with a local web app (nmp)
+#  Learning how to integrate Okta with a local web app (nmp)
 
 h2. Overview
 Two parts to this learning
 - Part 1: use an already-created sample app, via a tool that installs and configures that app
 - Part 2 do it manually, and understand it
 
-h2. Part 1
+## Part 1
 
 Using an already created sample app....
 
@@ -24,7 +24,7 @@ Follow instructions here https://github.com/okta-samples/okta-express-sample/tre
   - cd to express directory (it was created when ran okta start express(?)), then run nmp install
    - Note: npm install installs the packages into the node_modules folder in the express project folder that the okta start express command created...this is a node project folder (?)...one can have multiple - each with their own local dependencies(?))
 
-h2. Part 2
+## Part 2
 
 Understand things, and do them manually
 - Read through the stuff that helps with understanding this all better
