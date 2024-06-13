@@ -1,6 +1,6 @@
 #  Learning how to integrate Okta with a local web app (nmp)
 
-h2. Overview
+## Overview
 Two parts to this learning
 - Part 1: use an already-created sample app, via a tool that installs and configures that app
 - Part 2 do it manually, and understand it
