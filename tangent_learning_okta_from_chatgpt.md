@@ -59,10 +59,12 @@ Scopes - what are they?
 In OIDC, there is something called an ID token...and that is always a JWT
 JWTs, btw, include header, payload, and signature
 - header includes an algorithm, with which the payload (whatever important data...) gets encrypted, and signature - to prove hasn't been tampered with, perhaps (if they share a trusted root) sender is who says it is
+
 Resource Server, Resource Owner (what is a resource owner)
+
 In Oauth, there is...
 - Authorization server and token server ... can be the same, but, there are use cases for it to be sifferent...so, two separate things in spec
--- like, the auth code flow?  where user gets an auth code...and then server does something ... (?)
+  - like, the auth code flow?  where user gets an auth code...and then server does something ... (?)
 - Client type?  Device (API to API, for example?) ?  Or User/browser?  
 - and, given combination of these things/scenarios, there are different flows?
 Flows - different flows work/offer security/are feasible for different scenarios
