@@ -45,6 +45,7 @@ SAML
 - SAML Response
 - Assertion Consumer Service URL
 - Callback URL (?)
+
 Oauth/OIDC:
 - Oauth for authorization, OIDC for authentication (?)
 - Oauth is a framework, not a spec (or whatever)...it leaves many elements open to interpretation/growth (and development of extensions)
@@ -67,6 +68,7 @@ In Oauth, there is...
   - like, the auth code flow?  where user gets an auth code...and then server does something ... (?)
 - Client type?  Device (API to API, for example?) ?  Or User/browser?  
 - and, given combination of these things/scenarios, there are different flows?
+
 Flows - different flows work/offer security/are feasible for different scenarios
 - Devices without browsers
 - single page apps (store everything client side - which can be an issue)
@@ -78,6 +80,7 @@ Flows - different flows work/offer security/are feasible for different scenarios
   - Exchanges it for a token, or something?
   - application (server?  or something) gets...a token?  
   - idk
+
 Information in token includes...
 - sub (subject name?)
 - iat - issured at time
