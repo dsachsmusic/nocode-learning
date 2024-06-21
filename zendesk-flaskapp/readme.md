@@ -40,11 +40,11 @@ Have Flask set up on ... details on set up not convered here. And have requireme
 - In Flask app directory, create a templates folder, and create a file (index.html, for example), with HTML file (head, body, etc), include HTML form element, in body 
 - Note: Reminder...In Flask w/Jinja2 templating, we can have server side script variables and flow determine if a template, is "rendered"(?) i.e. if html is loaded, and with what specific values (from given variables)
 - Create server side logic to render the HTML template as a view (MVC)/webpage, in response to a GET call
-  - return render_template('index.html')
+  - `return render_template('index.html')`
 - Create server side logic in the Flask app for making an API call if request is a POST...using the text from the post as values in an API call, and, collecting the results of the API into a variable named "message"
-  - return render_template('index.html', message=message)
+  - `return render_template('index.html', message=message)`
 - Insert, into index.html, Jinja templating language for creates and populating an HTML element (`<p>` element, for example), if a variable "message" is not null
-  - `{% if message %} <p>{{ message }}`</p> {% endif %}` (note: not sure if this requeires carriage returns and indentation)
+  - `{% if message %} <p>{{ message }} </p> {% endif %}` (note: not sure if this requeires carriage returns and indentation)
 
 ### Including the Messaging widget
 - Paste that Web Widget script copied earlier into the HTML body. 
