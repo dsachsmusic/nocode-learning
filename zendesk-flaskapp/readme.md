@@ -44,7 +44,7 @@ Have Flask set up on ... details on set up not convered here. And have requireme
 - Create server side logic in the Flask app for making an API call if request is a POST...using the text from the post as values in an API call, and, collecting the results of the API into a variable named "message"
   - return render_template('index.html', message=message)
 - Insert, into index.html, Jinja templating language for creates and populating an HTML element (<p> element, for example), if a variable "message" is not null
-  - {% if message %} <p>{{ message }}</p> {% endif %} (note: not sure if this requeires carriage returns and indentation)
+  - {% if message %} `<p>{{ message }}`</p> {% endif %} (note: not sure if this requeires carriage returns and indentation)
 
 ### Including the Messaging widget
 - Paste that Web Widget script copied earlier into the HTML body. 
