@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zendesk User Lookup</title>
+</head>
+<body>
+    <h1>Zendesk User Lookup</h1>
+    <form method="post">
+        <label for="username">Enter Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <!-- Start of davidrobertsachs Zendesk Widget script -->
+    <script id="ze-snippet" 
+        src="https://static.zdassets.com/ekr/snippet.js?key=9e74418c-752d-4412-972b-cdf2f61c66ad"> 
+    </script>
+    <!-- End of davidrobertsachs Zendesk Widget script -->
+</body>
+</html>
