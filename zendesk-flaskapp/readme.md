@@ -13,12 +13,12 @@ Have Flask set up on ... details on set up not convered here. And have requireme
 # Learning notes and concepts
 ## Flask app that gets some info back from an api in response to text from a form (and, somewhat unrelated: on the peripheral, includes a chat widget)
 ### Making Basic Auth API call using Python
-- Zendesk API call for searching for a user by email address: https://davidrobertsachs.zendesk.com/api/v2/search.json?query=email:<username>'
+- Zendesk API call for searching for a user by email address: `https://davidrobertsachs.zendesk.com/api/v2/search.json?query=email:<username>'`
 - Basic Auth with Python: (method we are using is Basic Auth - we have this configured to be allowed in our Zendesk trial)
   - The Python requests library has a module (?) called HTTPBasic Auth - we import it (from requests.auth import HTTPBasicAuth), and then, use it as a parameter in our request.get() call...
-    -  auth=HTTPBasicAuth(username, token)
+    -  `auth=HTTPBasicAuth(username, token)`
 - In Zendesk, the username field, for Basic Auth is "emailaddress/token" (? apparently), so we write our request.get() call as:
-  - requests.get(zendesk_api_url, auth=HTTPBasicAuth(zendesk_api_user_email + '/token', zendesk_api_token))
+  - `requests.get(zendesk_api_url, auth=HTTPBasicAuth(zendesk_api_user_email + '/token', zendesk_api_token))`
 
 ### Creating a form to interact with, that makes API call
 - To make a form that a user can fill out, and submit, and, get some sort of info back based on results from an api call...
@@ -29,7 +29,7 @@ Have Flask set up on ... details on set up not convered here. And have requireme
 
 ### Flask app config details
 - Flask app should be configured to respond to both "get" and "post"...
-  - For example: @app.route('/', methods=['GET', 'POST'])
+  - For example: `@app.route('/', methods=['GET', 'POST'])`
   - This is because we are making a single webpage that 1) loads when somebody navigates to it, and 2) responds to post method that a form creates
 - Flask app function definition includes a condition for if the request type is "POST", make an API call, and, process the results, and return some related text 
   - ie - Flask app loads the page for a GET call (i.e. if somebody types the URL into a browser), and then, if somebody fills out the form, and clicks submit, the form, sends a POST request...and in response, said Flask condition is triggered 	
@@ -43,8 +43,8 @@ Have Flask set up on ... details on set up not convered here. And have requireme
   - return render_template('index.html')
 - Create server side logic in the Flask app for making an API call if request is a POST...using the text from the post as values in an API call, and, collecting the results of the API into a variable named "message"
   - return render_template('index.html', message=message)
-- Insert, into index.html, Jinja templating language for creates and populating an HTML element (<p> element, for example), if a variable "message" is not null
-  - {% if message %} `<p>{{ message }}`</p> {% endif %} (note: not sure if this requeires carriage returns and indentation)
+- Insert, into index.html, Jinja templating language for creates and populating an HTML element (`<p>` element, for example), if a variable "message" is not null
+  - `{% if message %} <p>{{ message }}`</p> {% endif %}` (note: not sure if this requeires carriage returns and indentation)
 
 ### Including the Messaging widget
 - Paste that Web Widget script copied earlier into the HTML body. 
